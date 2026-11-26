@@ -184,13 +184,13 @@
 │   │   └── Dynamic-NAT-and-Pools.md
 │   │
 │   ├── 02-DHCP/
-│   │   ├── DHCP-Introduction.md
-│   │   ├── DHCP-DORA-Process.md
-│   │   ├── DHCP-Client.md
+│   │   ├── DHCP-Introduction.md ✅
+│   │   ├── DHCP-DORA-Process.md ✅
+│   │   ├── DHCP-Client.md ✅
 │   │   └── DHCP-Relay.md
 │   │
 │   ├── 03-DNS/
-│   │   └── DNS-Introduction.md
+│   │   └── DNS-Introduction.md ✅
 │   │
 │   ├── 04-Network-Time-Protocol/
 │   │   └── NTP.md
