@@ -404,3 +404,13 @@ DNS stores different types of records to provide different kinds of information.
 | TTL | Determines cache validity |
 | Iterative Resolution | Resolver contacts DNS servers one by one |
 | Recursive Resolution | Resolver obtains the complete answer for the client |
+
+   ---
+
+## 12. References
+
+**Video:** Domain Name System (DNS Server) in Hindi/Urdu
+
+**Channel:** Technical Guftugu
+
+**Link:** https://youtu.be/1aEL4kZJbvs?si=-x744jY1SjXiFSS6
