@@ -158,3 +158,13 @@ This mechanism prevents multiple devices from transmitting simultaneously, there
 - **Star:** All devices connect to a centralized switch or hub.
 - **Ring:** Devices are connected in a circular fashion.
 - **Token Passing:** A device must have a token to transmit data in traditional Token Ring networks.
+
+   ---
+
+## 9. References
+
+**Video:** Network Topology-Mesh,Bus,Ring,Star,hybrid and Tree Topology
+
+**Channel:** Technical Guftugu
+
+**Link:** https://youtu.be/ud4akHNdLDI?si=tg0QiqG3DjgjKbRG
