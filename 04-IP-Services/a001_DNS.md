@@ -8,6 +8,26 @@
 - Computers communicate using IP addresses, not human-readable domain names.
 - DNS makes it easier for users to access websites using domain names instead of remembering IP addresses.
 
+
+A domain name consists of different labels. For example:
+
+`google.com`
+
+- `google` – Second-Level Domain (SLD), this is the name
+- `.com` – Top-Level Domain (TLD), this is the domain
+
+**More examples:**
+
+| Domain Name | Second-Level Domain | TLD |
+|---|---|---|
+| google.com | google | .com |
+| facebook.com | facebook | .com |
+| government.org | government | .org |
+| example.in | example | .in |
+
+**Note:** `.com`, `.org`, `.in`, etc. are Top-Level Domains (TLDs), not complete domain names by themselves.
+
+
 **Example:**
 
 Suppose a user wants to access:
@@ -42,6 +62,7 @@ DNS resolves the domain name into its corresponding IP address.
 - DNS follows a hierarchical and distributed architecture.
 - DNS supports caching to reduce lookup time and network traffic.
 - DNS uses 13 named logical Root Server identities, from A to M.
+- Protocol Number of DNS is 17
 
 ### 3. Top-Level Domains (TLDs)
 
