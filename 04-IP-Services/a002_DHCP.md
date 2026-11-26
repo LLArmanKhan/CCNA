@@ -320,3 +320,13 @@ IV. It makes managing multiple scopes easier.
 | Relay Agent | Forwards DHCP messages across subnets |
 
 **DORA = Discover → Offer → Request → Acknowledge**
+
+   ---
+
+## 12. References
+
+**Video:** Dynamic Host Configuration Protocol (DHCP)-Hindi/Urdu | How DHCP works | CCNA Full course in hindi
+
+**Channel:** Technical Guftugu
+
+**Link:** https://youtu.be/FhezqYWp2r4?si=rlJo0xt7r8JOAxvN
