@@ -67,11 +67,10 @@ It is divided into two parts:
 **Part 2: Device Identifier – Last 24 Bits**
 
 - The remaining 24 bits identify the individual interface within that assigned address block.
-- A manufacturer can generate up to \(2^{24}\) different identifiers within one 24-bit block.
+- A manufacturer can generate up to 2^24 different identifiers within one 24-bit block.
 
-\[
-2^{24} = 16,777,216
-\]
+
+2^24 = 16,777,216
 
 If a manufacturer exhausts one assigned address block, it can obtain another block.
 
