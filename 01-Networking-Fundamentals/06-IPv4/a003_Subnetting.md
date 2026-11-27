@@ -396,11 +396,14 @@ The remaining six host bits determine the addresses within each subnet.
 
 # 9. Practical Example – Subnetting According to Host Requirement
 
+Here, we are solving the question using FLSM (fixed length subnet mask)
+
 ![alt text](b0001_image.png)
 
 ![alt text](b0002_image.png)
 
 ![alt text](b0003_image.png)
+
 ---
 
 # 10. FLSM – Fixed Length Subnet Mask
