@@ -585,3 +585,13 @@ An ARP Announcement, on the other hand, announces an address that the device is 
 14. RARP was historically used to obtain an IP address using a MAC address. DHCP replaced it in modern networks.
 15. Gratuitous ARP is useful for detecting duplicate IP addresses and announcing IP-to-MAC mappings.
 16. IP addresses generally remain unchanged across routed hops, but MAC addresses change at every router hop.
+
+   ---
+
+## G. References
+
+**Video:** ARP | RARP | Proxy ARP | Gratuitous ARP | Address resolution Protocol in Hindi/Urdu | CCNA Lectures
+
+**Channel:** Technical Guftugu
+
+**Link:** https://youtu.be/-jjMVbxyuGY?si=mYFiCLHp9TwyxDZt
