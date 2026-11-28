@@ -543,3 +543,13 @@ In VLSM, we allocate IP addresses according to the number of devices required in
 Subnetting helps us divide a large network into smaller networks by borrowing bits from the host portion.
 
 FLSM creates equal-sized subnets, whereas VLSM creates different-sized subnets according to the host requirements of each network.
+
+  ---
+
+# 12. References
+
+**Video:** Subnetting Part-1 Hindi/Urdu Bhupinder Rajput
+
+**Channel:** Technical Guftugu
+
+**Link:** https://youtu.be/DqU3KVCyFNg?si=GH1FSzxBQpBWoaWU
