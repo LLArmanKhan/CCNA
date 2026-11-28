@@ -195,3 +195,13 @@ Where `h` represents the number of host bits.
 | 5 | 32 | 30 |
 | 4 | 16 | 14 |
 | 3 | 8 | 6 |
+
+  ---
+
+# 11. References
+
+**Video:** VLSM/Variable length subnet Mask{subnetting Part-5}-Hindi/Urdu l how to do VLSM | Computer Networks
+
+**Channel:** Technical Guftugu
+
+**Link:** https://youtu.be/Y8rf9imNIRI?si=fAlSX81QfER-gIP9
