@@ -487,7 +487,7 @@ We can calculate subnet ranges by arranging the borrowed bits in ascending binar
 
 ---
 
-# 9. Practical Example – Subnetting According to Host Requirement
+# 9. Practical Example of Subnetting (FLSM)
 
 Here, we are solving the question using FLSM (fixed length subnet mask)
 
