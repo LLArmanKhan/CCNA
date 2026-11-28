@@ -75,7 +75,7 @@
 │   │   ├── Subnetting.md ✅
 │   │   ├── CIDR-Notation.md
 │   │   ├── Network-Host-Broadcast-Addresses.md
-│   │   └── VLSM.md
+│   │   └── VLSM.md ✅
 │   │
 │   ├── 07-IPv6/
 │   │   ├── IPv6-Introduction.md
