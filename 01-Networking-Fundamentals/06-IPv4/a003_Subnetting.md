@@ -335,7 +335,7 @@ Some important subnet masks:
 | /29 | 255.255.255.248 | 3 |
 | /30 | 255.255.255.252 | 2 |
 
-# 8. How to Calculate Subnet Ranges
+## 8. How to Calculate Subnet Ranges
 
 After creating subnets, we need to calculate the following:
 
@@ -344,53 +344,146 @@ After creating subnets, we need to calculate the following:
 3. Last Usable Host IP
 4. Broadcast IP
 
-**Method:**
+### A. Method: Using Borrowed Bits
 
-For a /24 network, the first three octets remain the same.
+If we borrow `n` bits from the host portion, the ascending binary combinations of those borrowed bits determine the ranges of the subnets.
 
-When borrowing bits in the fourth octet, the subnet ranges depend on the block size.
+- Number of subnets = 2^n
+- Each combination of borrowed bits represents a different subnet.
+- The remaining host bits determine the IP addresses within that subnet.
 
-Block Size = 256 − Value of the Interesting Octet in the Subnet Mask.
+### B. Example: Class C Network
 
-For example, with /26:
+Consider an original Class C network with CIDR `/24`.
 
-Subnet Mask = 255.255.255.192
+We borrow 2 bits from the host portion.
 
-Block Size = 256 − 192 = 64
+- Original Network Bits = 24
+- Borrowed Bits = 2
+- New CIDR = `/26`
+- Remaining Host Bits = 6
+- Number of Subnets = 2^2 = 4
 
-Therefore, the subnet network IDs increase by 64.
+The first three octets will remain the same in all four subnets.
 
-The subnet ranges will be:
+In the fourth octet:
 
-- 0–63
-- 64–127
-- 128–191
-- 192–255
+- The first 2 bits represent the borrowed network bits.
+- The remaining 6 bits represent the host bits.
+
+![alt text](b0014_image.png)
+
+The two borrowed bits can have four combinations in ascending order:
+
+`00 → 01 → 10 → 11`
+
+Each combination represents a different subnet.
+
+| Subnet | Binary Range (Fourth Octet) | Decimal Range |
+|---|---|---|
+| 1st | `00 000000 – 00 111111` | 0–63 |
+| 2nd | `01 000000 – 01 111111` | 64–127 |
+| 3rd | `10 000000 – 10 111111` | 128–191 |
+| 4th | `11 000000 – 11 111111` | 192–255 |
+
+Therefore, the subnet ranges are:
+
+- First subnet: `192.168.1.0 – 192.168.1.63`
+- Second subnet: `192.168.1.64 – 192.168.1.127`
+- Third subnet: `192.168.1.128 – 192.168.1.191`
+- Fourth subnet: `192.168.1.192 – 192.168.1.255`
 
 For each subnet:
+
 - First address = Network ID
 - Last address = Broadcast IP
 - Addresses between them = Usable Host IPs
 
-**Binary Understanding:**
+### C. Example from the Handwritten Notes
 
-In /26, we borrow 2 bits from the original /24 host portion.
+**Given Network**
 
-The last octet becomes:
+`157.110.0.0/16`
 
-NNHHHHHH
+**Requirement:** Create at least 30 subnets.
 
-Here:
-- NN = Borrowed network bits
-- HHHHHH = Remaining host bits
+#### Step 1: Calculate Borrowed Bits
 
-The borrowed bits can have four combinations:
+2^n >= 30
 
-00, 01, 10, 11
+2^5 = 32
+
+Therefore, we borrow 5 bits.
+
+#### Step 2: Calculate the New CIDR
+
+- Original CIDR = `/16`
+- Borrowed Bits = 5
+
+New CIDR:
+
+16+5=21
+
+Subnet Mask = `255.255.248.0`
+
+#### Step 3: Identify the Borrowed Bits
+
+The first two octets remain the same.
+
+In the third octet:
+
+- The first 5 bits are borrowed network bits.
+- The remaining 3 bits are host bits.
+
+`NNNNN HHH`
+
+The borrowed bits have 32 combinations, from:
+
+`00000, 00001, 00010 ... 11111`
 
 Each combination represents a different subnet.
 
-The remaining six host bits determine the addresses within each subnet.
+#### Step 4: Calculate Subnet Ranges
+
+**1st Subnet**
+
+- Binary Range: `00000 000` to `00000 111`
+- IP Range: `157.110.0.0 – 157.110.7.255`
+- Network ID: `157.110.0.0/21`
+- Broadcast IP: `157.110.7.255`
+
+**2nd Subnet**
+
+- Binary Range: `00001 000` to `00001 111`
+- IP Range: `157.110.8.0 – 157.110.15.255`
+- Network ID: `157.110.8.0/21`
+- Broadcast IP: `157.110.15.255`
+
+**Last Subnet (32nd)**
+
+- Binary Range: `11111 000` to `11111 111`
+- IP Range: `157.110.248.0 – 157.110.255.255`
+- Network ID: `157.110.248.0/21`
+- Broadcast IP: `157.110.255.255`
+
+**Note:** With `/21`, there are 11 host bits, so each subnet supports:
+
+2^11-2=2046
+
+Usable hosts.
+
+This is more than enough for 64 hosts.
+
+### D. Summary
+
+We can calculate subnet ranges by arranging the borrowed bits in ascending binary order.
+
+- Each borrowed-bit combination represents a subnet.
+- Set all remaining host bits to `0` to get the Network ID.
+- Set all remaining host bits to `1` to get the Broadcast IP.
+- The addresses between the Network ID and Broadcast IP are the usable host addresses.
+
+**Remember:** Borrowed bits identify the subnet, while remaining host bits identify devices within that subnet.
 
 ---
 
