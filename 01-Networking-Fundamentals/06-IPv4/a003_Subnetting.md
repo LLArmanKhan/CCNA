@@ -398,11 +398,25 @@ The remaining six host bits determine the addresses within each subnet.
 
 Here, we are solving the question using FLSM (fixed length subnet mask)
 
+Example 1:
+
 ![alt text](b0001_image.png)
 
 ![alt text](b0002_image.png)
 
 ![alt text](b0003_image.png)
+
+Example 2:
+
+![alt text](b0010_image.png)
+
+![alt text](b0011_image.png)
+
+Example 3:
+
+![alt text](b0012_image.png)
+
+![alt text](b0013_image.png)
 
 ---
 
