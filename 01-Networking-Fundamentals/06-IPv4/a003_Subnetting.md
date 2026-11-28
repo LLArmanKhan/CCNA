@@ -335,7 +335,7 @@ Some important subnet masks:
 | /29 | 255.255.255.248 | 3 |
 | /30 | 255.255.255.252 | 2 |
 
-## 8. How to Calculate Subnet Ranges
+# 8. How to Calculate Subnet Ranges
 
 After creating subnets, we need to calculate the following:
 
