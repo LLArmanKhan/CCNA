@@ -489,6 +489,13 @@ We can calculate subnet ranges by arranging the borrowed bits in ascending binar
 
 # 9. Practical Example of Subnetting (FLSM)
 
+two changes to make
+1. router-router ke bich me we need two ip, one for r1 interface and one for r2
+2. subnet 1 range is : 197.10.10.00000000 to 197.10.10.00111111
+   subnet 2 range is : 197.10.10.01000000 to 197.10.10.01111111
+    and so on 
+    its not ki subnet 1 range is : 197.10.10.00000000 to 197.10.10.01000000-1❌
+
 Here, we are solving the question using FLSM (fixed length subnet mask)
 
 Example 1:
